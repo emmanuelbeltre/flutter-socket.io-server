@@ -2,6 +2,8 @@
 
 
 
+
+
 class Bands {
 
     constructor() {
@@ -26,7 +28,7 @@ class Bands {
     voteBand(id = '') {
         this.bands = this.bands.map(band => {
             if (band.id === id) {
-                band.vote++;
+                band.votes++;
                 return band;
 
             }
